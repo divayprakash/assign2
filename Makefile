@@ -36,7 +36,7 @@ compile : $(SRC).hex
 
 $(SRC).hex : $(SRC).elf
 #rule for conversion of elf file to hex file
-	$(CONVERTER) -O ihex -R .eeprom $< $@
+	$(CONVERTER) -O ihex -R .text .data .eeprom $< $@
 # -O output file name
 # -R remove section
 
