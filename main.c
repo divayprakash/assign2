@@ -11,7 +11,7 @@ int main ()
  	// set data direction register for output on PORTB
  	while(1) 
  	{
- 		PORTB ~= 0x20;
+ 		PORTB ^= 0x20;
   		// set Pin 5 of PORTB at high
     	_delay_ms(DELAY_MS); 
   		// delay
