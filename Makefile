@@ -59,9 +59,7 @@ program : $(SRC).hex
 
 # -F Normally, avrdude tries to verify that the device signature read from the part is reasonable before continuing.  Since
 # 	 it can happen from time to time that a device has a broken (erased or overwritten) device signature but is otherwise
-# 	 operating normally, this options is provided to override the check.  Also, for programmers like the Atmel STK500 and
-# 	 STK600 which can adjust parameters local to the programming tool (independent of an actual connection to a target con‐
-# 	 troller), this option can be used together with -t to continue in terminal modes
+# 	 operating normally, this options is provided to override the check. 
 # -c programmer-id Use the programmer specified by the argument
 # -V Disable automatic verify check when uploading data
 # -p part
