@@ -22,7 +22,7 @@ UPLOADER=avrdude -F -V -c
 BOARD=arduino
 # board
 
-PORT=/dev/ttyUSB0
+PORT=COM4
 # port
 
 BAUD_RATE=57600
